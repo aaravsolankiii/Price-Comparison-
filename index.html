@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FlashCompare</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+  <h1>⚡ FlashCompare</h1>
+  <p>Compare prices across platforms instantly</p>
+
+  <input type="text" id="searchInput" placeholder="Search product...">
+  <button onclick="searchProduct()">Compare</button>
+
+  <div id="result"></div>
+
+  <canvas id="priceChart" width="400" height="200"></canvas>
+
+  <button id="pdfBtn" onclick="downloadPDF()" style="display:none;">
+    Export as PDF
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
